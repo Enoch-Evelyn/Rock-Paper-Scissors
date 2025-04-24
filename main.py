@@ -13,6 +13,11 @@ computer_action = random.choice(computer_possible_actions )
 #Recorded input from and output from computer formated into a literal string and presented on screen, f allows to input literals and the n allows for space between lines
 print(f"\nYou chose {user_action}, computer chose {computer_action}.\n")
 
+#This is an if/else statement created to print an battle result/outcome dependent on the user_action and the computer_action 
 if user_action == computer_action:
     print(f" Both players selected {user_action}. It's a draw💥 !!")
-else: print("Boom")
+elif user_action == 'rock':
+    if computer_action == "scissors":
+      print("Rock beats scissors!! You won")
+    else: 
+       print("Paper beats rock..Nice try, haha ")
